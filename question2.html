@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問題2 | Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-content">
+    <h2> 以下の中でブラウザで<span>ないもの</span>を選べ </h2>
+      <ul class="answers" data-id="question2">
+        <li data-set="A">Google Chrome</li>
+        <li data-set="B">Safari</li>
+        <li data-set="C">Windows11</li>
+        <li data-set="D">Fire Fox</li>
+      </ul>
+    </dl>
+  </div>
+    <div class="answer-content">
+
+      <h2>答え</h2>
+      <p>正解です！Windows11</p><br>
+       <dl>
+         <dt>解説</dt>
+         <dd>Windows11 はブラウザではありません。</dd>
+      
+    </div>
+    <div class="false-message">
+      <p>残念！間違っています</p>
+    </div>
+  <div class="back">
+    <a href="index.html">戻る</a>
+    
+  </div>
+  <script>
+    const answer = document.querySelector('.answer-content');
+    const falseMessage= document.querySelector('.false-message');
+    const ul = document.querySelector('ul');
+    const lists = document.querySelectorAll('li');
+    
+    lists.forEach((li)=>{
+      li.addEventListener('click',function(){
+         let choiceAnswer = this.innerText;
+         if(choiceAnswer =='Windows11'){
+          answer.style.display = 'block';
+         }
+         else{
+          falseMessage.style.display='block';
+         }
+      })
+      
+      
+    })
+  </script>
+</body>
+</html>

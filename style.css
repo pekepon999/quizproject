@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:100;
+  padding-top: 12px;
+}
+h1,h2{
+  border-bottom: 1px solid #a129bf;
+}
+div.false-message p{
+  color: red;
+  
+}
+span{
+  font-weight: bold;
+
+}
+a{
+  padding: 20px;
+}
+
+div.quiz-content , div.answer-content, div.back, div.section-content, div.false-message{
+   margin-left: 20%;
+   width: 40%;
+}
+
+div.answer-content, div.false-message{
+  display: none;
+}
+div.answer-content p::first-line{
+  color: red;
+  
+}
+ul{
+  display: block;
+}
+ul li{
+  padding: 1em;
+  
+  border: 2px solid;
+  margin-bottom: 4px;
+  opacity: 0.8;
+  list-style: upper-alpha;
+  list-style-position: inside;
+}
+ul li:hover{
+  font-size: large;
+  cursor: pointer;
+  background-color: rgb(235, 239, 240);
+  opacity: 1;
+  
+}
